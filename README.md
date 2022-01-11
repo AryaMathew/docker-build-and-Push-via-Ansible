@@ -1,4 +1,4 @@
-# docker-build-and-Push-via-Ansible
+# Docker-build-and-Push-via-Ansible
 
 This is a playbook demo for installing the Docker and building a python application image from a Docker file and then it pushed to your Docker Hub account via Ansible.
 
@@ -27,8 +27,8 @@ This is a playbook demo for installing the Docker and building a python applicat
   become: true
   vars:
     git_url: "https://github.com/AryaMathew/Python-Docker-Flask.git"
-    docker_user: "aryamathew"
-    docker_password: "jmjjmj99**"
+    docker_user: "aryamathew"                                       # Docker hub user name
+    docker_password: "**********"                                   # Docker hub password
     image_name: "aryamathew/flaskapp"
   tasks:
 
